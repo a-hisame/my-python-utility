@@ -23,6 +23,9 @@ Python2.7で記載する時で汎用性のある処理を書き溜めておくところ。
 
 以下のパッケージがあり、以下の機能と依存関係を所有しています。
 
+○○に依存、と記載がある場合、
+依存しているアプリケーションがインストールされたマシンでしか動作しないことを意味します。
+
 * ahisame.common
   
   * 共通で利用する汎用的な機能
@@ -32,11 +35,7 @@ Python2.7で記載する時で汎用性のある処理を書き溜めておくところ。
   
   * Fabricをより楽に利用するための機能
   * ahisame.common, `Fabric`_ に依存
-
-* ahisame.awscli
-  
-  * awscliを利用した機能(コマンドラインでの実行を簡易化します)
-  * ahisame.fabric, `awscli`_ に依存
+  * 一部の機能 (ファイル名にawscliを含むもの) は `awscli`_ に依存
 
 
 .. _`Fabric`: http://docs.fabfile.org/en/1.8/index.html
