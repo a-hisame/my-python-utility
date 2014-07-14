@@ -1,0 +1,44 @@
+######
+README
+######
+
+概要
+====
+
+Python2.7で記載する時で汎用性のある処理を書き溜めておくところ。
+
+いわゆるチラシの裏です。
+
+
+責任
+====
+
+コピペして使うなり、自分のコードにアイデアを取り込むなり、ご自由にどうぞ。
+
+ただし、コピペして利用したコードが引き起こした内容に関して、その一切の責任は負いません。
+
+
+パッケージ
+==========
+
+以下のパッケージがあり、以下の機能と依存関係を所有しています。
+
+* ahisame.common
+  
+  * 共通で利用する汎用的な機能
+  * 依存関係なし(標準APIのみに依存)
+
+* ahisame.fabric
+  
+  * Fabricをより楽に利用するための機能
+  * ahisame.common, `Fabric`_ に依存
+
+* ahisame.awscli
+  
+  * awscliを利用した機能(コマンドラインでの実行を簡易化します)
+  * ahisame.fabric, `awscli`_ に依存
+
+
+.. _`Fabric`: http://docs.fabfile.org/en/1.8/index.html
+.. _`awscli`: http://docs.aws.amazon.com/cli/latest/reference/
+
