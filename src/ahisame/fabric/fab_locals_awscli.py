@@ -16,8 +16,10 @@ from fabric.api import *
 from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
+from ahisame.common import jsonutils
+
 def run(awscli_command):
-  with quite():
+  with quiet():
     rawjson = local(awscli_command, capture=True)
     return jsonutils.str_to_dict(rawjson)
 
